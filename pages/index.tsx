@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <Page meta={meta}>
       <Layout>
-        <div className="h-96">Home</div>
+        <div className="h-96 text-gray-600">Home</div>
       </Layout>
     </Page>
   );

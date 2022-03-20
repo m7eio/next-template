@@ -1,20 +1,4 @@
-const withAntdLess = require('next-plugin-antd-less');
-
-module.exports = withAntdLess({
-  // modifyVars: { '@primary-color': '#04f' },
-  // optional
-  lessVarsFilePath: './styles/antd.less',
-  // optional
-  // lessVarsFilePathAppendToEndOfContent: false,
-  // optional https://github.com/webpack-contrib/css-loader#object
-  cssLoaderOptions: {},
-
-  // Other Config Here...
-
-  webpack(config) {
-    return config;
-  },
-
+module.exports = {
   i18n: {
     locales: ['zh-CN', 'en-US'],
     defaultLocale: 'zh-CN',
@@ -22,4 +6,5 @@ module.exports = withAntdLess({
   images: {
     domains: ['static.ghost.org'],
   },
-});
+  swcMinify: true,
+};

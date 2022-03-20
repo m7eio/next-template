@@ -31,7 +31,7 @@ export default function Page({ meta, children, className, fullViewport = false }
     <div className={cn('page-container', className, { full: fullViewport })}>
       <Head>
         <title>{title}</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
