@@ -1,4 +1,6 @@
 import React from 'react';
+import { ConnectButton } from "@m7eio/rainbowkit";
+
 import Page from '../components/page';
 import Layout from '../components/layout';
 import { SITE_NAME, META_DESCRIPTION } from '../common/const';
@@ -12,6 +14,7 @@ export default function Index() {
     <Page meta={meta}>
       <Layout>
         <div className="h-96 text-gray-600">Home</div>
+        <ConnectButton />
       </Layout>
     </Page>
   );
